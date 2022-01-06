@@ -9,10 +9,14 @@ import Foundation
 
 class Item {
     
-    var names: [String]
+    var name: String = ""
     
-    init(names: [String]) {
-        self.names = names
+    init() {
+        
+    }
+    
+    init(name: String) {
+        self.name = name
     }
     
     enum ItemOperator {
