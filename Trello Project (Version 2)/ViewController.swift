@@ -13,22 +13,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 // MARK: - Outlets, Constants, and Variables
     @IBOutlet weak var trelloTableView: UITableView!
     @IBOutlet weak var itemTextField: UITextField!
-    
+    var items = [Item]()
     
 // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        trelloTableView.dataSource = self
+        trelloTableView.delegate = self
         
     }
 // MARK: - Functions, Actions, etc.
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = trelloTableView.dequeueReusableCell(withIdentifier: "myCell")!
+        cell.textLabel?.text = items[indexPath.row].name
+        return cell
     }
     
     @IBAction func addItem(_ sender: UIBarButtonItem) {
