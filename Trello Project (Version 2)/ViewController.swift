@@ -11,17 +11,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
 // MARK: - Outlets, Constants, and Variables
-    
+    var items = [Item]()
     
 // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
 // MARK: - Functions, Actions, etc.
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
