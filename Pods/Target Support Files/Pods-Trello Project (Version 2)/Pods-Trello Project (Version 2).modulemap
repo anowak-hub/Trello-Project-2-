@@ -1,0 +1,6 @@
+framework module Pods_Trello_Project__Version_2_ {
+  umbrella header "Pods-Trello Project (Version 2)-umbrella.h"
+
+  export *
+  module * { export * }
+}
