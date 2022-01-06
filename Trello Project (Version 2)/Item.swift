@@ -20,7 +20,7 @@ class Item {
     }
     
     enum ItemOperator {
-        case names
+        case name
     }
     
 }
