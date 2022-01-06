@@ -11,6 +11,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
 // MARK: - Outlets, Constants, and Variables
+    @IBOutlet weak var trelloTableView: UITableView!
+    @IBOutlet weak var itemTextField: UITextField!
     
     
 // MARK: - viewDidLoad
@@ -26,6 +28,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         <#code#>
+    }
+    
+    @IBAction func addItem(_ sender: UIBarButtonItem) {
+    
     }
     
 }

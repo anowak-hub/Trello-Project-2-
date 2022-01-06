@@ -47,8 +47,16 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qNS-ld-akQ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qNS-ld-akQ">
+                            <connections>
+                                <action selector="addItem:" destination="BYZ-38-t0r" id="BQK-UJ-Dgl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="itemTextField" destination="ty1-9G-7bD" id="SoG-WL-znK"/>
+                        <outlet property="trelloTableView" destination="BK7-8D-tSi" id="iLM-hx-anE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
