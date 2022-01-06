@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 // MARK: - Outlets, Constants, and Variables
     @IBOutlet weak var trelloTableView: UITableView!
     @IBOutlet weak var itemTextField: UITextField!
-    var items = [Item]()
+    var items = [Item()]
     
 // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -35,7 +35,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func addItem(_ sender: UIBarButtonItem) {
-    
+//        let item = Item()
+//        item.name = itemTextField.text!
+//        items.append(item)
     }
     
 }
