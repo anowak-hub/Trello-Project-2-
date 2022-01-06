@@ -13,6 +13,7 @@
 		B65FD82A27874CDB008C8FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65FD82827874CDB008C8FCC /* Main.storyboard */; };
 		B65FD82C27874CDD008C8FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65FD82B27874CDD008C8FCC /* Assets.xcassets */; };
 		B65FD82F27874CDD008C8FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65FD82D27874CDD008C8FCC /* LaunchScreen.storyboard */; };
+		B65FD83727874EF3008C8FCC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FD83627874EF3008C8FCC /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B65FD82B27874CDD008C8FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65FD82E27874CDD008C8FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B65FD83027874CDD008C8FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65FD83627874EF3008C8FCC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		B65FD82127874CDB008C8FCC /* Trello Project (Version 2) */ = {
 			isa = PBXGroup;
 			children = (
+				B65FD83627874EF3008C8FCC /* Item.swift */,
 				B65FD82227874CDB008C8FCC /* AppDelegate.swift */,
 				B65FD82427874CDB008C8FCC /* SceneDelegate.swift */,
 				B65FD82627874CDB008C8FCC /* ViewController.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65FD83727874EF3008C8FCC /* Item.swift in Sources */,
 				B65FD82727874CDB008C8FCC /* ViewController.swift in Sources */,
 				B65FD82327874CDB008C8FCC /* AppDelegate.swift in Sources */,
 				B65FD82527874CDB008C8FCC /* SceneDelegate.swift in Sources */,
