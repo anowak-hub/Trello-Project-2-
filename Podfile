@@ -5,7 +5,7 @@ target 'Trello Project (Version 2)' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   	pod 'Firebase', '~> 8.10'
-	pod 'FirebaseDatabase', '~> 8.10'
+	  pod 'FirebaseDatabase', '~> 8.10'
   # Pods for Trello Project (Version 2)
 
 end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CA3FEECF1A87F09A0D3D2F3 /* Pods_Trello_Project__Version_2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C1DF1D1A4DAF925C81B1C5 /* Pods_Trello_Project__Version_2_.framework */; };
+		B63C8A3D278C99E400C49DC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63C8A3C278C99E400C49DC6 /* GoogleService-Info.plist */; };
 		B65FD82327874CDB008C8FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FD82227874CDB008C8FCC /* AppDelegate.swift */; };
 		B65FD82527874CDB008C8FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FD82427874CDB008C8FCC /* SceneDelegate.swift */; };
 		B65FD82727874CDB008C8FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FD82627874CDB008C8FCC /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		17C1DF1D1A4DAF925C81B1C5 /* Pods_Trello_Project__Version_2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trello_Project__Version_2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCB31957FACAC891F5F35AF /* Pods-Trello Project (Version 2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trello Project (Version 2).release.xcconfig"; path = "Target Support Files/Pods-Trello Project (Version 2)/Pods-Trello Project (Version 2).release.xcconfig"; sourceTree = "<group>"; };
 		6D8B9CD9BCD9BFF2965A0F84 /* Pods-Trello Project (Version 2).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trello Project (Version 2).debug.xcconfig"; path = "Target Support Files/Pods-Trello Project (Version 2)/Pods-Trello Project (Version 2).debug.xcconfig"; sourceTree = "<group>"; };
+		B63C8A3C278C99E400C49DC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B65FD81F27874CDB008C8FCC /* Trello Project (Version 2).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trello Project (Version 2).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65FD82227874CDB008C8FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65FD82427874CDB008C8FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				6D8B9CD9BCD9BFF2965A0F84 /* Pods-Trello Project (Version 2).debug.xcconfig */,
 				3DCB31957FACAC891F5F35AF /* Pods-Trello Project (Version 2).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 				B65FD82B27874CDD008C8FCC /* Assets.xcassets */,
 				B65FD82D27874CDD008C8FCC /* LaunchScreen.storyboard */,
 				B65FD83027874CDD008C8FCC /* Info.plist */,
+				B63C8A3C278C99E400C49DC6 /* GoogleService-Info.plist */,
 			);
 			path = "Trello Project (Version 2)";
 			sourceTree = "<group>";
@@ -156,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65FD82F27874CDD008C8FCC /* LaunchScreen.storyboard in Resources */,
+				B63C8A3D278C99E400C49DC6 /* GoogleService-Info.plist in Resources */,
 				B65FD82C27874CDD008C8FCC /* Assets.xcassets in Resources */,
 				B65FD82A27874CDB008C8FCC /* Main.storyboard in Resources */,
 			);
