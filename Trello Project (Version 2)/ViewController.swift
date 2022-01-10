@@ -60,5 +60,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
+    
+    func updateData() {
+        let database = Database.database().reference().child("Items")
+        database.child("Item").setValue(itemTextField.text!)
+    }
 }
 
