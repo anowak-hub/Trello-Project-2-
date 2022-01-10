@@ -39,10 +39,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func addItem(_ sender: UIBarButtonItem) {
-//        let item = Item()
-//        item.name = itemTextField.text!
-//        items.append(item)
-//        trelloTableView.reloadData()
+        let item = Item()
+        item.name = itemTextField.text!
+        items.append(item)
+        trelloTableView.reloadData()
+        
     }
     
     public func getData() {
