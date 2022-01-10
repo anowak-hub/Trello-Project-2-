@@ -45,6 +45,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         items.append(item)
         trelloTableView.reloadData()
         
+        updateData()
+        
     }
     
     public func getData() {
