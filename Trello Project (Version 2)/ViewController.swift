@@ -22,12 +22,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         trelloTableView.dataSource = self
         trelloTableView.delegate = self
+        
         getData()
     }
 // MARK: - Functions, Actions, etc.
-    override func viewDidAppear(_ animated: Bool) {
-        trelloTableView.reloadData()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        trelloTableView.reloadData()
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -66,7 +67,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func updateData() {
         let database = Database.database().reference().child("Items")
-        database.child("Item").setValue(itemTextField.text!)
+        database.child(itemTextField.text!).setValue(itemTextField.text!)
     }
 }
 
