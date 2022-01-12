@@ -21,12 +21,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         trelloTableView.dataSource = self
         trelloTableView.delegate = self
-        
-        trelloTableView.reloadData()
         getData()
     }
 // MARK: - Functions, Actions, etc.
-
+    override func viewDidAppear(_ animated: Bool) {
+        trelloTableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
