@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var trelloTableView: UITableView!
     @IBOutlet weak var itemTextField: UITextField!
     var items = [Item()]
+    var itemAdded = true
     
 // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -39,13 +40,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func addItem(_ sender: UIBarButtonItem) {
-        let item = Item()
-        item.name = itemTextField.text!
-        items.append(item)
-        trelloTableView.reloadData()
-        
-        updateData()
-        
+        if itemAdded {
+            let item = Item()
+            item.name = itemTextField.text!
+            items.append(item)
+            trelloTableView.reloadData()
+            updateData()
+        }
     }
     
     public func getData() {
@@ -53,11 +54,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let database = Database.database().reference().child("Items")
         database.observeSingleEvent(of: .value) { snapshot in
             for data in snapshot.children.allObjects as! [DataSnapshot] {
-                let item = Item()
+                let itemClass = Item()
                 let name = data.value as! String
                 
-                item.name = name
-                self.items.append(item)
+                itemClass.name = name
+                self.items.append(itemClass)
                 
             }
         }
