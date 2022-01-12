@@ -15,8 +15,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var trelloTableView: UITableView!
     @IBOutlet weak var itemTextField: UITextField!
     var items = [Item()]
-    var names2 = ["milk", "corn", "cookies", "pizza"]
-    
     
 // MARK: - viewDidLoad
     override func viewDidLoad() {
