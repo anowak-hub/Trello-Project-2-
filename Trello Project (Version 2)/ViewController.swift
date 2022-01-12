@@ -50,7 +50,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     public func getData() {
         items.removeAll()
-        
         let database = Database.database().reference().child("Items")
         database.observeSingleEvent(of: .value) { snapshot in
             for data in snapshot.children.allObjects as! [DataSnapshot] {
